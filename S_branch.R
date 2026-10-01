@@ -1,0 +1,1 @@
+name <- c("Luna", "Mike", "Mary")
