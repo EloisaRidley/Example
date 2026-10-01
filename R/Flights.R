@@ -15,3 +15,10 @@ flights_clean <- flights |>
     departure_time = dep_time,
     arrival_time = arr_time
   )
+# 4. Summarise key numeric columns
+flights_clean |>
+  summarise(
+    avg_dep_delay = mean(dep_delay, na.rm = TRUE),
+    avg_arr_delay = mean(arr_delay, na.rm = TRUE),
+    avg_air_time = mean(air_time, na.rm = TRUE)
+  )
