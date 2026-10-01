@@ -22,3 +22,6 @@ flights_clean |>
     avg_arr_delay = mean(arr_delay, na.rm = TRUE),
     avg_air_time = mean(air_time, na.rm = TRUE)
   )
+# 5. Count unique values in carrier and origin
+flights_clean |> count(carrier)
+flights_clean |> count(origin)
